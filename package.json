@@ -1,0 +1,32 @@
+{
+  "name": "harmony-gradient-nft",
+  "version": "0.0.1",
+  "description": "Demo for Deploying a Gradient NFT to Harmony Blockchain",
+  "main": "dist/index.js",
+  "author": "Michael Bondi <michael.bondi329@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "format": "prettier --write \"**/*.{ts,tsx,css,scss}\"",
+    "format-check": "prettier -l \"**/*.{ts,tsx,css,scss}\"",
+    "lint": "eslint --ext .ts,.tsx --max-warnings 0 src/",
+    "lint-fix": "eslint --fix --ext .ts,.tsx  src/",
+    "start": "tsc -w & nodemon -q -w dist dist/index.js",
+    "version": "yarn version"
+  },
+  "dependencies": {
+    "truffle": "^5.2.2",
+    "openzeppelin-solidity": "^3.4.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.21.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "nodemon": "^2.0.7",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
+  }
+}
