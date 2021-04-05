@@ -1,10 +1,10 @@
-const ArtCollectibleToken = artifacts.require("ArtCollectibleToken");
+const Collectible = artifacts.require("CollectibleDotOne");
 
 module.exports = function(deployer) {
-  const _name = "Art Collectible Token";
-  const _symbol = "ARTCOL";
+  const _name = "Collectible Dot One";
+  const _symbol = "CDO";
 
   return deployer.then(() =>
-    deployer.deploy(ArtCollectibleToken, _name, _symbol)
+    deployer.deploy(Collectible, _name, _symbol)
   );
 };
